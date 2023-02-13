@@ -1,17 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title style="text-align: center;">
+      MENU
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Platillos</ion-card-title>
+      <ion-card-subtitle>Vista rapida del menu</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Tiramizu" src="https://www.recetasnestle.com.ec/sites/default/files/srh_recipes/7f45d6f8807ebc775928651a3398dce9.png" />
+          </ion-thumbnail>
+          <ion-label>Tiramizu</ion-label>
+        </ion-item>
+        
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Cheesecake" src="https://static.onecms.io/wp-content/uploads/sites/21/2015/02/11/cheesecake-facil-con-leche-condensada-2000.jpg" />
+          </ion-thumbnail>
+          <ion-label>Cheesecake</ion-label>
+          
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://recetastips.com/wp-content/uploads/2019/11/Mermelada-de-durazno-1.jpg" />
+          </ion-thumbnail>
+          <ion-label></ion-label>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Dulce de leche" src="https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/styles/recipes_1200_800_fallback/public/2022-02/dulce-de-leche%C2%A9iStock.jpg?itok=dNtkcbXP" />
+          </ion-thumbnail>
+          <ion-label>Dulce de leche</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+
+    <ion-button (click)="presentAlert()" style="padding-left: 7%;">ACEPTAR</ion-button>
+    <br>
+    <br>
+  </ion-card>
+
 </ion-content>
+
+
